@@ -228,27 +228,22 @@ section {
     border-radius: 2rem;
 }
 
-.btn-color-1,
-.btn-color-2 {
-    border: #353535 0.1rem solid;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-    background: #353535;
+.btn-color-1 {
+    background: #000000;
+    border: #000000 0.1rem solid;
     color: #FFFFFF;
 }
 
-.btn-color-1:hover {
-    background: #000000;
-}
-
 .btn-color-2 {
+    border: #000000 0.1rem solid;
     background: none;
 }
 
+.btn-color-1:hover,
 .btn-color-2:hover {
-    border: #FFFFFF 0.1rem solid;
+    background: #353535;
+    border: #353535 0.1rem solid;
+    color: #FFFFFF;
 }
 
 .btn-container {
@@ -343,4 +338,25 @@ article {
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
+}
+
+/* Projects Section */
+.color-container {
+    border-color: #A3A3A3;
+    background: #FAFAFA;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: #000000;
+}
+
+.project-btn {
+    width: 8rem;
 }
