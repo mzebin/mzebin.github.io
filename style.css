@@ -154,6 +154,7 @@ section {
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
+    position: relative;
 }
 
 .section-container {
@@ -163,7 +164,6 @@ section {
 /* Profile Section */
 
 #profile {
-    position: relative;
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -268,10 +268,6 @@ section {
 }
 
 /* About Section */
-#about {
-    position: relative;
-}
-
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
@@ -311,4 +307,40 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+/* Experience Section */
+.experience-title {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.experience-sub-title {
+    color: #555555;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
 }
