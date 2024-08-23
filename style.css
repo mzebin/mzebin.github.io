@@ -163,6 +163,7 @@ section {
 /* Profile Section */
 
 #profile {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -254,6 +255,18 @@ section {
     gap: 1rem;
 }
 
+.arrow-up {
+    position: absolute;
+    right: -5rem;
+    top: 2rem;
+}
+
+.arrow-down {
+    position: absolute;
+    right: -5rem;
+    bottom: 2rem;
+}
+
 /* About Section */
 #about {
     position: relative;
@@ -277,12 +290,6 @@ section {
 
 .about-pic {
     border-radius: 2rem;
-}
-
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2rem;
 }
 
 .details-container {
