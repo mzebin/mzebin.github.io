@@ -8,6 +8,12 @@
     .about-containers {
         flex-wrap: wrap;
     }
+
+    section,
+    .section-container {
+        min-height: 80vh;
+        height: fit-content;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -126,4 +132,7 @@
     .text-container {
         text-align: justify;
     }
+}
+
+/* Prevent content from overflowing */
 }

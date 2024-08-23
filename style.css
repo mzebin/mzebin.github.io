@@ -398,11 +398,14 @@ article {
 
 /* Footer Section */
 footer {
-    height: 26vh;
+    height: 20vh;
     margin: 0 1 rem;
-    padding-top: 2rem;
 }
 
 footer p {
     text-align: center;
+}
+
+footer nav {
+    height: 10vh;
 }
