@@ -295,6 +295,26 @@ section {
     text-align: center;
 }
 
+.about-sub-title {
+    padding-bottom: 0.25rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.skills-list li {
+    color: #555555;
+    flex: 1 1 20%;
+    text-align: left;
+}
+
 .section-container {
     gap: 4rem;
     height: 80%;
