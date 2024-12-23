@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Zebin</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Basic Favicon -->
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+    <!-- PNG Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicons/android-chrome-512x512.png">
 </head>
+
 <body>
     <nav>
         <div class="nav-container">
@@ -23,14 +39,14 @@
     <section id="home">
         <div class="home-container">
             <div class="profile-pic-container">
-                <img src="assets/profile-pic.png" alt="Profile Picture">
+                <img src="assets/images/profile-pic.png" alt="Profile Picture">
             </div>
             <div class="home-content">
                 <p class="greeting">Hello, I'm</p>
                 <h1>Muhammad Zebin</h1>
                 <p class="title">Computer Science Student</p>
                 <div class="cta-buttons">
-                    <button class="btn btn-outline" onclick="window.open('assets/Muhammad_Zebin_Resume.pdf')">
+                    <button class="btn btn-outline" onclick="window.open('assets/others/Muhammad_Zebin_Resume.pdf')">
                         <i class="fas fa-download"></i> Download Resume
                     </button>
                     <button class="btn btn-filled" onclick="location.href='./#contact'">
@@ -55,12 +71,12 @@
             <div class="about-grid">
                 <div class="about-text">
                     <p class="bio">
-                        I'm a Computer Science student passionate about creating innovative solutions 
-                        through code. With a focus on clean, efficient programming, I strive to build 
-                        meaningful applications that make a difference. When I'm not coding, you can 
+                        I'm a Computer Science student passionate about creating innovative solutions
+                        through code. With a focus on clean, efficient programming, I strive to build
+                        meaningful applications that make a difference. When I'm not coding, you can
                         catch me on the football field, enjoying the beautiful game.
                     </p>
-                    <img src="assets/about-pic.png" alt="About Me" class="about-image">
+                    <img src="assets/images/about-pic.png" alt="About Me" class="about-image">
                 </div>
 
                 <div class="about-info">
@@ -94,7 +110,7 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image">
-                    <img src="assets/project1.png" alt="Tic Tac Toe">
+                    <img src="assets/images/project1.png" alt="Tic Tac Toe">
                 </div>
                 <div class="project-content">
                     <h3>Tic Tac Toe</h3>
@@ -104,7 +120,8 @@
                             <i class="fab fa-python" title="Python"></i>
                         </div>
                         <div class="project-links">
-                            <a onclick="window.open('https://github.com/mzebin/Tic-Tac-Toe')" class="project-link" title="GitHub">
+                            <a onclick="window.open('https://github.com/mzebin/Tic-Tac-Toe')" class="project-link"
+                                title="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
@@ -114,7 +131,7 @@
 
             <div class="project-card">
                 <div class="project-image">
-                    <img src="assets/project2.png" alt="Pomodoro Timer">
+                    <img src="assets/images/project2.png" alt="Pomodoro Timer">
                 </div>
                 <div class="project-content">
                     <h3>Pomodoro Timer</h3>
@@ -126,10 +143,12 @@
                             <i class="fab fa-js" title="JavaScript"></i>
                         </div>
                         <div class="project-links">
-                            <a onclick="window.open('https://mzebin.github.io/PomoClock/')" class="project-link" title="Live Demo">
+                            <a onclick="window.open('https://mzebin.github.io/PomoClock/')" class="project-link"
+                                title="Live Demo">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
-                            <a onclick="window.open('https://github.com/mzebin/PomoClock')" class="project-link" title="GitHub">
+                            <a onclick="window.open('https://github.com/mzebin/PomoClock')" class="project-link"
+                                title="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
@@ -139,7 +158,7 @@
 
             <div class="project-card">
                 <div class="project-image">
-                    <img src="assets/project3.png" alt="Todo App">
+                    <img src="assets/images/project3.png" alt="Todo App">
                 </div>
                 <div class="project-content">
                     <h3>Todo App</h3>
@@ -191,6 +210,7 @@
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-</html> 
+
+</html>
