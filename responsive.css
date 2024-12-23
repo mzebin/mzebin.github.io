@@ -1,0 +1,59 @@
+/* Simplify responsive.css by removing redundant styles */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-methods {
+        gap: 1rem;
+    }
+    
+    .contact-item {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .contact-item .contact-info {
+        overflow: hidden;
+    }
+
+    .contact-item .contact-info a {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 200px;
+    }
+}
+
+/* Remove duplicate media queries and keep only essential responsive styles */
+@media (max-width: 480px) {
+    .btn {
+        min-width: 160px;
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .contact-wrapper {
+        padding: 1.5rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .contact-item .contact-info {
+        text-align: center;
+    }
+
+    .contact-item .contact-info a {
+        max-width: 100%;
+    }
+} 
