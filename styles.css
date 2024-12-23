@@ -203,8 +203,9 @@ section h2 {
     margin-top: 50px;
     margin-bottom: 3rem;
     font-size: 2rem;
+    font-weight: lighter;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 
 /* Home section specific */
@@ -213,18 +214,24 @@ section h2 {
 }
 
 /* Other sections */
-#about, #projects, #contact {
+#about,
+#projects,
+#contact {
     justify-content: flex-start;
 }
 
 /* Container styles */
-.about-container, .projects-grid, .contact-form {
+.about-container,
+.projects-grid,
+.contact-form {
     width: 100%;
     max-width: 1200px;
 }
 
 /* Remove any margin/padding adjustments that might affect positioning */
-#about, #projects, #contact {
+#about,
+#projects,
+#contact {
     padding-top: 2rem;
     margin-top: 0;
 }
