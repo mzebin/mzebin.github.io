@@ -1,10 +1,10 @@
 // Smooth scroll for navigation links
 document.querySelectorAll('.nav-links a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         const targetSection = document.querySelector(targetId);
-        
+
         window.scrollTo({
             top: targetSection.offsetTop,
             behavior: 'smooth'
@@ -27,7 +27,7 @@ const observerCallback = (entries) => {
         if (entry.isIntersecting) {
             // Remove active class from all links
             navLinks.forEach(link => link.classList.remove('active'));
-            
+
             // Add active class to current section's link
             const activeId = entry.target.id;
             const activeLink = document.querySelector(`.nav-links a[href="#${activeId}"]`);
