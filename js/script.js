@@ -42,4 +42,94 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 
 sections.forEach(section => {
     observer.observe(section);
-}); 
+});
+
+// Carousel
+const carousel = document.querySelector('.projects-carousel');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const projectCards = document.querySelectorAll('.project-card');
+const dotsContainer = document.querySelector('.carousel-dots');
+
+let currentIndex = 0;
+let cardWidth = 0; // Will be calculated dynamically
+
+// Function to update dots based on current index
+function updateDots() {
+    if (!dotsContainer) return;
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+}
+
+// Function to scroll to a specific card
+function scrollToCard(index) {
+    if (!carousel || index < 0 || index >= projectCards.length) return;
+    const card = projectCards[index];
+    carousel.scrollTo({
+        left: card.offsetLeft - carousel.offsetLeft,
+        behavior: 'smooth'
+    });
+    currentIndex = index;
+    updateDots();
+}
+
+// Build dots based on number of cards
+if (dotsContainer && projectCards.length > 0) {
+    projectCards.forEach((_, index) => {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        dot.addEventListener('click', () => scrollToCard(index));
+        dotsContainer.appendChild(dot);
+    });
+    updateDots();
+}
+
+// Previous button click
+if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            scrollToCard(currentIndex - 1);
+        } else {
+            // Optionally loop to last card
+            scrollToCard(projectCards.length - 1);
+        }
+    });
+}
+
+// Next button click
+if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < projectCards.length - 1) {
+            scrollToCard(currentIndex + 1);
+        } else {
+            // Optionally loop to first card
+            scrollToCard(0);
+        }
+    });
+}
+
+// Update active dot based on scroll position (when user drags manually)
+if (carousel) {
+    carousel.addEventListener('scroll', () => {
+        // Find the card that is most visible
+        const scrollPosition = carousel.scrollLeft;
+        let closestIndex = 0;
+        let smallestDiff = Infinity;
+
+        projectCards.forEach((card, index) => {
+            const cardLeft = card.offsetLeft - carousel.offsetLeft;
+            const diff = Math.abs(cardLeft - scrollPosition);
+            if (diff < smallestDiff) {
+                smallestDiff = diff;
+                closestIndex = index;
+            }
+        });
+
+        if (closestIndex !== currentIndex) {
+            currentIndex = closestIndex;
+            updateDots();
+        }
+    });
+}

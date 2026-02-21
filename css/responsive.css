@@ -1,9 +1,12 @@
 /* Simplify responsive.css by removing redundant styles */
 @media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-        margin: 0 auto;
+    .projects-carousel .project-card {
+        flex: 0 0 calc(100% - 0.5rem); /* 1 card on mobile */
+    }
+    
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
     }
     
     .about-grid {
@@ -37,6 +40,19 @@
     .btn {
         min-width: 160px;
         padding: 0.7rem 1.5rem;
+    }
+
+    .carousel-container {
+        gap: 0.5rem;
+    }
+    
+    .carousel-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .carousel-btn i {
+        font-size: 1rem;
     }
     
     .contact-wrapper {
