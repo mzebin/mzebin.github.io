@@ -51,8 +51,8 @@ h1, h2, h3 {
 }
 
 .profile-pic-container img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -279,9 +279,10 @@ section h2 {
 }
 
 .about-image {
-    width: 100%;
-    max-width: 350px;
     height: auto;
+    width: auto;
+    max-height: 500px;
+    max-width: 350px;
     border-radius: 20px;
 }
 
